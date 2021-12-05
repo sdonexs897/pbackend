@@ -3,9 +3,9 @@ from .models import Post
 
 
 class PostList(admin.ModelAdmin):
-    list_display = ('name', 'year', 'body', 'rating')
-    list_filter = ('name', 'year', 'rating')
-    search_fields = ('name', 'description')
+    list_display = ('name', 'year', 'body')
+    list_filter = ('name', 'year', )
+    search_fields = ('name', 'body')
     ordering = ['year']
 
 

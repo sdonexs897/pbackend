@@ -7,7 +7,7 @@ class Post(models.Model):
     name = models.CharField(max_length=50)
     body = models.TextField(max_length=360)
     year = models.IntegerField(blank=False, null=False)
-    rating = models.IntegerField(blank=False, null=False)
+
 
     created_date = models.DateTimeField(
         default=timezone.now)
